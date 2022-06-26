@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 require("dotenv").config({ path: "./config.env" });
 const port = process.env.PORT || 5050;
-const origin = 'http://localhost:3000' || 'https://knowledge-sharing-app.netlify.app';
+const origin = 'https://knowledge-sharing-app.netlify.app';
 const corsOptions = {
   origin: origin,
   credentials: true,
