@@ -3,9 +3,8 @@ const app = express();
 const cors = require("cors");
 require("dotenv").config({ path: "./config.env" });
 const port = process.env.PORT || 5050;
-const origin = 'https://knowledge-sharing-app.netlify.app';
 const corsOptions = {
-  origin: origin,
+  origin: 'https://knowledge-sharing-app.netlify.app',
   credentials: true,
 };
 app.use(cors(corsOptions));
